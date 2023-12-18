@@ -12,23 +12,24 @@
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/ajaxchimp.js"></script>
-
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/parallax.js"></script>
-    <script type="text/javascript" src="js/nicescroll.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/scrollTo.js"></script>
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="https://sleepypanda.imgix.net/hero.jpg?h=560&auto=format"
+      type="image/webp" />
+    <script type="text/javascript" src="js/main.min.js"></script>
   </head>
   <body>
     <!--  Header Section -->
     <header>
       <div class="container">
         <div class="logo pull-left animated wow fadeInLeft">
-          <img class="logo-image" src="https://sleepypanda.imgix.net/logo.png" alt="" title="" />
+          <img
+            class="logo-image"
+            src="https://sleepypanda.imgix.net/logo.png?auto=format"
+            alt=""
+            title="" />
         </div>
 
         <nav class="pull-left">
@@ -119,7 +120,7 @@
           <div class="col-md-6 text-center animated wow fadeInLeft">
             <div class="iphone">
               <img
-                src="https://sleepypanda.imgix.net/iphone.png?w=33 {
+                src="https://sleepypanda.imgix.net/iphone.png?w=33?auto=format {
 								opacity: .9;
 							}"
                 alt=""
@@ -297,7 +298,7 @@
         data-wow-duration="2s"
         id="submit_form">
         <input type="email" id="mc-email" placeholder="Enter your email" />
-        <button type="submit" id="mc_submit">
+        <button type="submit" id="mc_submit" aria-label="Submit">
           <i class="icon"></i>
         </button>
       </form>
@@ -310,18 +311,32 @@
     <footer>
       <ul class="list-unstyled list-inline app_platform">
         <li class="animated wow fadeInDown" data-wow-delay="0s">
-          <a href=""><img src="img/android_icon.png" alt="" title="" /></a>
+          <a href="" aria-label="Donwload for Android devices"
+            ><img src="img/android_icon.png" alt="" title=""
+          /></a>
         </li>
         <li class="animated wow fadeInDown" data-wow-delay=".1s">
-          <a href=""><img src="img/ios_icon.png" alt="" title="" /></a>
+          <a href="" aria-label="Donwload for Apple devices"
+            ><img src="img/ios_icon.png" alt="" title=""
+          /></a>
         </li>
         <li class="animated wow fadeInDown" data-wow-delay=".2s">
-          <a href=""><img src="img/windows_icon.png" alt="" title="" /></a>
+          <a href="" aria-label="Donwload for Windows devices"
+            ><img src="img/windows_icon.png" alt="" title=""
+          /></a>
         </li>
       </ul>
       <p class="copyright animated wow fadeIn" data-wow-duration="2s"><strong>Pixelhint</strong></p>
     </footer>
 
     <!--  End Footer Section  -->
+
+    <script type="text/javascript" src="js/ajaxchimp.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/nicescroll.js"></script>
+    <script type="text/javascript" src="js/scrollTo.js"></script>
+    <script defer type="text/javascript" src="js/jquery.js"></script>
   </body>
 </html>
